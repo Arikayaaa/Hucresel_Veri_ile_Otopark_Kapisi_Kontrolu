@@ -5,8 +5,8 @@
 
 
 // Ağ bilgilerinizi girin
-const char* ssid = "avcilar-hk3";
-const char* password = "avcilar-hk31234";
+const char* ssid = "**********";
+const char* password = "*********";
 
 //2 numaralı GPIO pini LED için tanımladık.
 bool ledDurum = LOW;
@@ -225,7 +225,7 @@ void setup(){
   digitalWrite(ledPin, LOW);
   pinMode(ledWifi, OUTPUT);
   digitalWrite(ledWifi, HIGH);
-  attachInterrupt(digitalPinToInterrupt(ledDurum), ledKontrol, RISING); //HIGH oldukça çalışacak //nodemcu için çalışmaz. nodemcu için RISING yapın
+  attachInterrupt(digitalPinToInterrupt(ledDurum), ledKontrol, RISING); //HIGH oldukça çalışacak //nodemcu için RISING olmalı
   
   // wifi bağlantısı
   WiFi.begin(ssid, password);
