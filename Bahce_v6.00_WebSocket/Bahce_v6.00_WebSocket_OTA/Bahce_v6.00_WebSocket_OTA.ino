@@ -9,10 +9,10 @@
 
 
 // Ağ bilgilerinizi girin
-const char* ssid = "avcilar-hk3";
-const char* password = "avcilar-hk31234";
-//const char* ssid = "avcilar-hk2";
-//const char* password = "alibaba1234";
+const char* ssid = "*********";
+const char* password = "***********";
+//const char* ssid = "**********";
+//const char* password = "**********";
 
 //2 numaralı GPIO pini LED için tanımladık.
 bool ledDurum = LOW;
@@ -25,7 +25,7 @@ unsigned long simdikizaman = 0;
 unsigned long oncekizaman = 0;
 
 // 80 portunda çalışacak bir sunucu ve bu sunucu üzerinde çalışacak "ws" adında bir AsyncWebServer nesnesi yaratalım
-AsyncWebServer server(1453);
+AsyncWebServer server(**);
 AsyncWebSocket ws("/ws");
 
 //web sayfamız ile ilgili HTML kodları:
